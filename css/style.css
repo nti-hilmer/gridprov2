@@ -1,0 +1,68 @@
+#container {
+    display: grid;
+    width: 40vw;
+    height: 100vh;
+    grid-template-areas:
+    "he he he"
+    "ig ig ig"
+    "ig ig ig"
+    "ig ig ig"
+    "fo fo fo"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+#innergrid {
+    background-color: rgb(192, 236, 192);
+    grid-area: ig;
+    display: grid;
+    grid-template-areas:
+    "a1 a2 a3"
+    "a1 a2 a3"
+    "mn mn mn"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+#header {
+    grid-area: he;
+    background-color: rgb(175, 214, 238);
+}
+
+#article1 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    grid-area: a1;
+    background-color: rgb(255, 255, 205);
+}
+
+#article2 {
+    margin-bottom: 20px;
+    grid-area: a2;
+    background-color: rgb(255, 255, 205);
+}
+
+#article3 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    grid-area: a3;
+    background-color: rgb(255, 255, 205);
+}
+
+#main {
+    margin-right: 5px;
+    margin-left: 5px;
+    grid-area: mn;
+    background-color: rgb(212, 177, 219);
+}
+
+#footer {
+    grid-area: fo;
+    background-color: rgb(228, 177, 177);
+}
+
+#section {
+    padding: 5px;
+}
